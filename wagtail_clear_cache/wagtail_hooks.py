@@ -21,5 +21,5 @@ def register_cache_menu_item():
 
 @hooks.register("register_admin_urls")
 def urlconf_clear_cache():
-	"""Register a new admin url."""
+    """Register a new admin url."""
     return [url(r"^clear-cache/$", clear_cache, name="wagtailadmin_clear_cache")]
