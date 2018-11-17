@@ -1,0 +1,9 @@
+*.pyc
+*.pyo
+*.egg-info
+build/
+dist/
+.venv
+.DS_Store
+*.log
+tests/testapp/var/media/
