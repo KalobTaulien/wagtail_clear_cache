@@ -1,7 +1,7 @@
 """Clear tempalte caching."""
-from django.shortcuts import redirect
-from django.core.cache import cache
 from django.contrib import messages
+from django.core.cache import cache
+from django.shortcuts import redirect
 from django.urls import reverse
 
 
