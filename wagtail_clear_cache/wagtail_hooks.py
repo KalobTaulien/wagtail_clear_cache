@@ -4,7 +4,7 @@ from wagtail import VERSION as WAGTAIL_VERSION
 from wagtail.admin.menu import MenuItem
 
 if WAGTAIL_VERSION >= (3, 0):
-    from wagtail.core import hooks
+    from wagtail import hooks
 else:
     from wagtail.core import hooks
 
