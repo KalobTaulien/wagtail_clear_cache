@@ -13,7 +13,7 @@ def register_cache_menu_item():
         "Clear Cache",
         reverse("wagtailadmin_clear_cache"),
         order=999,
-        icon_name="history"
+        icon_name="history",
     )
 
 
