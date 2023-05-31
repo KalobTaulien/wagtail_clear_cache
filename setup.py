@@ -36,5 +36,6 @@ setup(
     keywords='development',
     install_requires=[
         'wagtail>=4.1',
-    ]
+    ],
+    extras_require={"develop": ["black", "flake8", "isort"]},
 )
