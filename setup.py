@@ -19,12 +19,12 @@ setup(
         'Environment :: Web Environment',
         'Framework :: Django',
         'Framework :: Django :: 3.2',
-        'Framework :: Django :: 4.0',
         'Framework :: Django :: 4.1',
+        'Framework :: Django :: 4.2',
         'Framework :: Wagtail',
         "Framework :: Wagtail :: 4",
+        "Framework :: Wagtail :: 5",
         'Programming Language :: Python',
-        'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
@@ -36,6 +36,5 @@ setup(
     keywords='development',
     install_requires=[
         'wagtail>=4.1',
-        'Django>=3.2'
     ]
 )
