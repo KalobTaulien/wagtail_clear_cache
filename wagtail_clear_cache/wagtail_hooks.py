@@ -1,10 +1,8 @@
 """Clear Django Cache app."""
-from django.urls import reverse
+from django.urls import path, reverse
+from wagtail import hooks
 from wagtail.admin.menu import MenuItem
 
-from wagtail.core import hooks
-
-from django.conf.urls import url
 from .views import clear_cache
 
 
@@ -14,12 +12,12 @@ def register_cache_menu_item():
     return MenuItem(
         "Clear Cache",
         reverse("wagtailadmin_clear_cache"),
-        classnames="icon icon-folder-open-inverse",
         order=999,
+        icon_name="history",
     )
 
 
 @hooks.register("register_admin_urls")
 def urlconf_clear_cache():
     """Register a new admin url."""
-    return [url(r"^clear-cache/$", clear_cache, name="wagtailadmin_clear_cache")]
+    return [path("clear-cache/", clear_cache, name="wagtailadmin_clear_cache")]
