@@ -12,8 +12,8 @@ def register_cache_menu_item():
     return MenuItem(
         "Clear Cache",
         reverse("wagtailadmin_clear_cache"),
-        classnames="icon icon-folder-open-inverse",
         order=999,
+        icon_name="history",
     )
 
 
