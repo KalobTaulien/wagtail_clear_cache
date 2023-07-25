@@ -34,7 +34,7 @@ This package has been tested with the following versions of Wagtail:
 
 - Wagtail 4.1+
 - Python 3.8+
-- Django 4.1+
+- Django 3.2+
 
 ## Todos
 
